@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noor-ul-Alif | The Written Silence</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: #080910;
+  color: #e4e3ed;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.stars {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    radial-gradient(1px 1px at 10% 20%, #fff, transparent),
+    radial-gradient(2px 2px at 80% 15%, #d5d9ff, transparent),
+    radial-gradient(1px 1px at 35% 65%, #fff, transparent),
+    radial-gradient(2px 2px at 70% 80%, #fff, transparent),
+    radial-gradient(1px 1px at 90% 45%, #c5c9ed, transparent),
+    radial-gradient(1px 1px at 20% 85%, #fff, transparent);
+  background-size: 240px 220px;
+  opacity: 0.8;
+}
+
+header {
+  text-align: center;
+  padding: 25px 12px;
+  border-bottom: 1px solid #30303c;
+  letter-spacing: 4px;
+  font-size: 13px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  padding: 22px 10px;
+}
+
+nav a {
+  color: #bdbccc;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: white;
+}
+
+.hero {
+  min-height: 72vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 55px 22px;
+}
+
+.moon {
+  font-size: 85px;
+  margin-bottom: 15px;
+  color: #f1f0ff;
+  text-shadow: 0 0 20px #b9b7ed, 0 0 55px #7273a8;
+  animation: glow 4s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 12px #a9a8df; }
+  to { text-shadow: 0 0 35px #d0ceff, 0 0 65px #686aab; }
+}
+
+.eyebrow {
+  color: #a9a8c3;
+  letter-spacing: 4px;
+  font-size: 11px;
+  text-transform: uppercase;
+  line-height: 2;
+}
+
+h1 {
+  font-size: clamp(38px, 7vw, 68px);
+  font-weight: normal;
+  letter-spacing: 2px;
+  margin: 15px 0;
+}
+
+.intro {
+  max-width: 500px;
+  line-height: 2;
+  color: #c0bfd0;
+}
+
+section {
+  text-align: center;
+  padding: 65px 20px;
+  border-top: 1px solid #282834;
+  scroll-margin-top: 20px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+
+.poem {
+  max-width: 580px;
+  margin: 35px auto 0;
+  padding: 35px 22px;
+  border: 1px solid #41404f;
+  background: rgba(20, 20, 32, 0.78);
+  line-height: 2.2;
+  color: #deddea;
+}
+
+.poem-title {
+  color: #f0eff8;
+  font-size: 21px;
+  font-style: italic;
+}
+
+.signature {
+  color: #a8a6c2;
+  font-size: 14px;
+  margin-top: 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 28px 15px;
+  color: #9291a7;
+  border-top: 1px solid #282834;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 480px) {
+  nav { gap: 40px; }
+  .eyebrow { letter-spacing: 2px; }
+}
+
+.about-hero {
+  text-align: center;
+  padding: 70px 20px 85px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.about-hero .intro {
+  max-width: 620px;
+  margin: 0 auto;
+  line-height: 1.9;
+}
+
+.about-section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 55px 24px;
+}
+
+.about-section h2 {
+  margin: 14px 0 24px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+.about-text {
+  line-height: 2;
+  color: #dedee8;
+}
+
+.featured-poem .verses {
+  white-space: pre-line;
+  line-height: 2.2;
+}
+
+.about-signature {
+  text-align: center;
+  padding: 55px 20px 75px;
+  line-height: 2;
+  color: #aaa9bc;
+}
+
+@media (max-width: 600px) {
+  .about-hero {
+    padding: 45px 20px 55px;
+  }
+
+  .about-section {
+    padding: 38px 20px;
+  }
+}
+
+
+.nav-divider {
+  color: #77758e;
+  padding: 0 5px;
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="stars"></div>
+
+<header>THE WRITTEN SILENCE</header>
+
+
+<nav>
+  <a href="index.html">Home</a>
+  <span class="nav-divider">|</span>
+  <a href="archive.html">Poetry</a>
+  <span class="nav-divider">|</span>
+  <a href="about.html">About the Poet</a>
+</nav>
+
+
+
+<main>
+  <section class="about-hero" id="about">
+    <div class="moon">☾</div>
+    <p class="eyebrow">BEHIND THE PEN</p>
+    <h1>Noor-ul-Alif</h1>
+
+    <p class="intro">
+      Some feelings are too deep for conversations,
+      too quiet for the world, and too alive to remain unwritten.
+      This is where silence finds its voice.
+    </p>
+  </section>
+
+  <section class="about-section">
+    <p class="eyebrow">A LITTLE ABOUT THIS SPACE</p>
+    <h2>The Soul Behind the Words</h2>
+
+    <p class="about-text">
+      A quiet universe of poetry, reflections,
+      unanswered questions, and words left between the lines.
+      Each poem holds a thought, a feeling, or a silence
+      that words alone try to understand.
+    </p>
+  </section>
+
+  <section class="about-section featured-poem">
+    <p class="eyebrow">BETWEEN INK AND INFINITY</p>
+    <h2>A Small Piece of My Universe</h2>
+
+    <div class="poem">
+      <p class="poem-title">An Unwritten Universe</p>
+
+      <div class="verses">
+        Every silence holds a story,
+        Every night conceals a dream.
+        Some words are born in darkness,
+        Some truths remain unseen.
+      </div>
+
+      <p class="signature">— Noor-ul-Alif</p>
+    </div>
+  </section>
+
+  <section class="about-signature">
+    <p>Every word has a silence of its own.</p>
+    <p class="signature">
+      Written under the same moon, in a thousand words.
+    </p>
+  </section>
+</main>
+
+
+<footer>© Noor-ul-Alif · THE WRITTEN SILENCE</footer>
+</body>
+</html>

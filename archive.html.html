@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poetry Archive | Noor-ul-Alif</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#08090d;color:#dedee8;font-family:Georgia,"Times New Roman",serif;line-height:1.8}
+header{padding:24px 7%;border-bottom:1px solid #30303c;display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.brand{color:#f0edf7;text-decoration:none;letter-spacing:2px}
+nav{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+nav a{color:#aaa9bc;text-decoration:none;font-size:14px}
+nav a:hover{color:white}
+.nav-divider{color:#77758e}
+main{width:min(900px,88%);margin:80px auto}
+.eyebrow{color:#9998b0;letter-spacing:4px;font-size:12px;text-transform:uppercase}
+h1{font-size:clamp(38px,7vw,66px);font-weight:normal;margin:12px 0}
+.intro{color:#aaa9bc;margin-bottom:42px}
+.search{width:100%;padding:15px;background:#11121a;color:#f0edf7;border:1px solid #41404e;border-radius:5px;font:inherit;margin-bottom:30px}
+.poem{padding:24px 0;border-bottom:1px solid #30303c}
+.poem h2{font-size:25px;font-weight:normal;margin:0 0 8px}
+.poem button{background:transparent;border:1px solid #666477;color:#dedee8;padding:9px 16px;cursor:pointer;font:inherit}
+.verses{white-space:pre-line;color:#dedee8;margin-top:20px}
+.hidden{display:none}
+footer{text-align:center;color:#777689;padding:30px 15px;border-top:1px solid #30303c;font-size:13px}
+</style>
+</head>
+
+<body>
+<header>
+  <a class="brand" href="index.html">NOOR-UL-ALIF</a>
+  <nav>
+    <a href="index.html">Home</a>
+    <span class="nav-divider">|</span>
+    <a href="archive.html">Poetry</a>
+    <span class="nav-divider">|</span>
+    <a href="about.html">About the Poet</a>
+  </nav>
+</header>
+
+<main>
+  <p class="eyebrow">A collection of written silences</p>
+  <h1>Poetry Archive</h1>
+  <p class="intro">Every verse keeps a piece of a story. Explore the words, and find what speaks to you.</p>
+
+  <input class="search" id="search" type="search"
+    placeholder="Search poems by title or words..." aria-label="Search poems">
+
+  <section id="poems">
+
+    <article class="poem">
+      <h2>Zindagi Ka Har Shakhs</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Zindagi ka har shakhs mohabbat nahin hota,
+Kuch log milte hain, par unki zarurat nahin hoti.
+Yeh chhin jaate hain kai raaston mein kahin,
+Unke baad bhi unki kami kabhi poori nahin hoti.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Rakh Ke To Dekh Wafa-E-Umeed</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Rakh ke to dekh wafa-e-umeed parinde se bhi,
+Kya pata nikal jaye wafadaar koi is jahan mein.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Nahi Rehti Wafa Har Shakhs Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Nahi rehti wafa har shakhs mein Noor,
+Rishte, nazrein, dil badal jaate hain faqt kuch lafz ke khatir.
+Ek lafz ke khatir badal jaate hai wafadaar bhi
+Tum kya samajhte ho mohabbat hamesha qaim rehti hai</div>
+    </article>
+
+    <article class="poem">
+      <h2>Nahi Hai Sunne Ko Koi Paband</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Nahi hai sunne ko koi paband kisi ka,
+Sabka apna Khuda hai, sabka apna jahan hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Shakhs Ke Dard Ko Dard Samajhiye</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har shakhs ke dard ko dard samajhiye, janab,
+Yahan aap hi nahi hain bas qabil-e-dukh.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Duniya, Ye Zindagi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye duniya, ye zindagi,
+Ye saazishen faqat ek lamhe ki maari hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Tu Dhoonde Zameen</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Tu dhoonde zameen, main aashiyaan dhoondun.
+Tu kahe to main iss zameen par sitara dhoondun.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kehne Ko Nazare</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kehne ko nazare bohot hain duniya mein,
+Lekin teri nazron sa nazara kahan milega.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Wo Ek Zakhm</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Wo ek zakhm ek yaad mein hai,
+Khali pannon ki fariyaad mein hai.
+Utar chuka hai mere zehen se wo,
+Ab kisi aur raste ki aaghaaz mein hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Rehta Hai Faqat Ab Meri Shayari Mein Wo</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Rehta hai faqat ab meri shayari mein wo,
+Meri yaadon mein uski kahi jagah nahin.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Noor-e-Jahan Aur Noor-e-Nazar</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Noor-e-jahan aur Noor-e-nazar mein,
+Tasawwur bhi naa kar sake hum, ki kaun zyada haseen hai. 😶</div>
+    </article>
+
+    <article class="poem">
+      <h2>Nazron Ka Taqaza</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Nazron ka taqaza hai jhuk jaayen dekhein to na-mehram,
+Wo mehram ban ke mile to koi aur baat hogi.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ek Sukoon Hai</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ek sukoon hai jo andar barpa sa hai,
+Ek khamoshi hai jo shor machana chahti hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Na Chahti Hoon Aaun Main</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Na chahti hoon aaun main logon ki tawajjo mein,
+Chahti hoon ki phir koi to dekhe mujhe.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Koi Mile Jo Mujhse Hi Wabasta</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Koi mile jo mujhse hi wabasta ho bas,
+Koi to aisa ho jiske liye duniya-o-zamana gawaya ja sake.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Koi To Ho Mujhse Wabasta</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Koi to ho mujhse wabasta,
+Ki meri kisi shay se use bezaari na ho.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Dil Ke Dariya Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Dil ke dariya mein aik aawaz behti hai,
+Ki tu ruk jaa, aage saaz rehti hai.
+Wo kar degi zabt tujh pe,
+Phir naa laut paayegi tu kabhi zindagi mein.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kuch Waqti Hālaton Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kuch waqti hālaton mein,
+Kuch rakhi chhupi bāton mein,
+Badalna padhta hai... 😶</div>
+    </article>
+
+    <article class="poem">
+      <h2>Mujhe Gawani Hai Duniya Apni</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Mujhe gawani hai duniya apni,
+Mujhe chahna hai kisi shakhs ko toot kar.
+Lekin ye bezaari aur danish,
+Meri aqal mujhe amada nahi karti. 😶</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Duniya Ki Sargoshiyaan</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye duniya ki sargoshiyaan, ye lehzon ka dukh,
+Kahan jaaun iss bezaar dil ko lekar?</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Saiyaara, Ye Duniya</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye saiyaara, ye duniya, ye lehje, ye log,
+Aur inki kashmakash mein maari zindagi.
+Wah naseeb, tere bhi khel nirale. 😶</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kashmakash Mein Guzar Jaayegi Zindagi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kashmakash mein guzar jaayegi zindagi,
+Do raah chal padoge jab tum,
+To kya tab wo dost yaad aayenge?</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Tanhaayi Aur Veerani</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye tanhaayi aur veerani kisi kaam ki nahi,
+Jab faaslon ka daur ho,
+To kaun kis ke saath ho.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Koi Ulfat Si</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Koi ulfat si, koi chaahat si,
+Koi mere dil ki aahat si khauf mein daal deti hai. 😶</div>
+    </article>
+
+    <article class="poem">
+      <h2>Iss Lehje Ki Bezaari</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Iss lehje ki bezaari ko kaun samjhega,
+Iss dil ki veerani ko kaun samjhega.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kehte Hain Likha Hai Naseebon Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kehte hain likha hai naseebon mein jo mil hi jaayega,
+Lekin mere naseeb, mera haath jab utha dua ke liye,
+To tere liye dua karne se khaali nahi gaya.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Main Jise Jaanti Bhi Nahi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Main jise jaanti bhi nahi, usi ka intezaar karti hoon.
+Kamaal ladki hoon, Khud hi chah kar, khud hi malaal karti hoon.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Tera Naam Abhi Lafzon Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Tera naam abhi lafzon mein aaya nahi,
+Magar dil pe pehra gehra hai.
+Main jaanti nahi tujh ko abhi,
+Magar ye dil abhi bhi tera hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ya Rabb, Use Meri Tarah Tanha Na Rakhna</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ya Rabb, use meri tarah tanha na rakhna.
+Use mehfilon mein rakhna,
+Par meri kami uske dil mein zaroor rakhna.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Main Adhoori Hoon Abhi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Main adhoori hoon abhi, hamari mulaqaat baaqi hai.
+Teri meri zindagi ka saath baaqi hai.
+Dekhne hain abhi hame maslay hazaar saath.
+Mere zehen mein to nahi, magar dil mein,
+Tujhse milne ka qarar baaqi hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Dil Na Sahi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye dil na sahi, zubaan samjho tum.
+Samajhna hai mujhko to aasman samjho tum.
+Nahi aaya samajh mein aasman,
+To suno—
+Mere dil ki hi zubaan samjho tum.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Na Dil Ho Tum</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Na dil ho tum, na zubaan ho tum.
+Ek rooh ki alag hi daastaan ho tum.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Main Hoon Bhi Ek Dariya</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Main hoon bhi ek dariya, Aur nahi bhi hoon ek qatra.
+Main hoon ek poori ghazal, Aur nahi hoon ek lafz bhi.
+Main hoon wajood se anjaan apne.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kabhi Khamoshi Bhi Cheekhti Hai</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kabhi khamoshi bhi cheekhti hai bayan hone ke khatir,
+Kabhi shor bhi chuppi saadh leta hai khamosh ho jaane ke khatir.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khud Hi Khud Ki Talaash</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Khud hi khud ki talaash hoon.
+Khuda se main yun paas hoon.
+Na zameen mein hoon main,
+Na aasman mein hoon.
+Kahin beech mein atka jahan hoon.
+Har cheez meri mamuli hai,
+Har baat meri adhoori hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Main Yun Zindagani Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Main yun zindagani mein apni rooh ko talaashti hoon.
+Na kisi ko chhoone deti hoon rooh apni,
+Na khud rooh ke paas jaati hoon.
+Koi aaye milne mujhse,
+To kahun—
+"Ruko, abhi bula ke laati hoon."</div>
+    </article>
+
+    <article class="poem">
+      <h2>Yun Duniyawi Lehjon Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Yun duniyawi lehjon mein khud ko kho baithi hoon,
+Khud hi apne logon se yun door ho baithi hoon.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ehsaason Ko Zahir Na Hone Diya</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ehsaason ko zahir na hone diya,
+Khamoshi ko raaz hi rakha apni.
+Inteshaar mein bhi sukoon rehna seekh liya,
+Yeh hunar bhi kamaal ka hai zindagi ne diya.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kabhi Khud Se Bhi Guftagu</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kabhi khud se bhi guftagu ka talluq na hota mera,
+Kabhi lagta hai qalb aazurda hai bohot.
+Kabhi lagta hai baat hi paas nahi mere,
+Main hoon khud ki hi parchhai,
+Aur khud ko hi main dekh nahi paati.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Zindagi Ne Kuch Lamhe</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Zindagi ne kuch lamhe aise dikhaye,
+Sab kuch beeta, par dil ne bayan na kiya.
+Na aankhon mein ashk aaye, na zubaan hili,
+Na koi lafz, na koi qissa bayaan hua.
+Khamoshi ne le li jagah meri,
+Na main raha, na mere alfaaz rahe.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Jhooth Nahi, Yahan Sach Bikta Hai</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Jhooth nahi, yahan sach bikta hai.
+Chehron par chehre sajaye phirte hain.
+Na rishton ki fikr, na talluq-e-junoon,
+Bas yahi hai yahan ka junoon.
+"Inna lillahi wa inna ilayhi raji'oon..."</div>
+    </article>
+
+    <article class="poem">
+      <h2>Na Paaya Samajh Hai Zindagi Kya?</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Na paaya samajh hai zindagi kya?
+Har sawaal hai mutalliq mujh se ismein yahan.
+Hum guzarte hain jahan mein faqat is tarah se zindaganiyon ko,
+Waqt ke saath guzarna sikha dete hain pareshaniyon ko.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Na Main Ek Hoon, Na Main Hazaar</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Na main ek hoon, na main hazaar,
+Apni hi daastaan mein hoon, apna hi yaar.
+Kabhi lagta hai main kuch bhi nahi,
+Kabhi lagta hai meri hi zindagi main hoon.
+Main khud hi khud ka sawaal hoon,
+Aur phir khud hi uska jawaab bhi.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Na Dil Samjhi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Na dil samjhi,
+Na jaan samjhi.
+Na lafzon ka bayan samjhi,
+Na baaton ka maqam samjhi.
+Na aankhon ki zubaan samjhi.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kya Sar Utha Paungi Main?</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kya sar utha paungi main?
+Kya nazrein mila paungi main?
+Jab hoga kun uska,
+Shukar ada kar paungi main.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Mohabbat Hui, Fasana Hua</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Mohabbat hui, fasana hua.
+Ishq hua, aashiqana hua.
+Dekh kar kho gaye hum.
+Unki aankhen muddaton baad dekhin,
+To paaya hamari nazron par koi aur deewana hua.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Mat Ho Haawi Mere Har Ik Andaaz Par</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Mat ho haawi mere har ik andaaz par, jaana.
+Main jahan bhi rukh karun,
+Mujhe bas tu nazar aata hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Sirf Tu Hi Kyun Mila</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Sirf tu hi kyun mila mere iss dil ko bhaane ko?
+Aur bhi to log hain na iss jahan mein.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Aaye Agar Baat Kisi Ki Izzat Par</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Aaye agar baat kisi ki izzat par,
+To thehrane lage use beghairat.
+Aayi baat apne upar jab,
+Kehne lage—jhooth hai sab.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Siqve Na Kariye</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Siqve na kariye is zindagi se,
+Yeh bhi to apne hi usool par chalti hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Koi Mile Mutalliq Mujh Ko</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Koi mile mutalliq mujh ko,
+Duniya-e-zamana gawane ko raazi hoon main.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ye Logon Ke Lehje</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye logon ke lehje, dil aur bezaari dikh jaane ke hunar ke saath,
+Kahan jaaun main?</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kahin Door Se Koi Sada</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kahin door se koi sada si aati hai,
+Koi paas hai mere, Koi saath hai mere.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Jo Ho Tum Apne Mere</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Jo ho tum apne mere, To theherna nahi mere liye.
+Na doob jaaun main lekar tumhe daryaa mein uss.
+Ya main kahun zubaan apne dil ki—
+Bacha lo mujhe bhi,
+Aur bach jaao khud bhi.
+Agar shaq hai ki doob jaaoge tum bhi,
+To jaao, chale jaao.
+Nahi rokungi main tumko kahin.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Dekhti Hai Wo Bacchi</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Dekhti hai wo bacchi mujhko jab,
+To kehti hai—
+"Ab ki main tumhe nahi jaanti."</div>
+    </article>
+
+    <article class="poem">
+      <h2>Sochti Hoon Main Ye Baaton Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Sochti hoon main ye baaton mein,
+Wo mera na ho saka faqat yaadon mein.
+Shayad wo tha hi nahi Mutalliq mujhse.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Humko Laazim Tha Tere Makaan Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Humko laazim tha tere makaan mein aana-jaana,
+Yun tujhko dekhe bagair saans kahan chalti hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Yun Be-Hayaai Ke Daur Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Yun be-hayaai ke daur mein hum bhi na gir jaayen,
+Yun kashmakash-e-zindagi mein rafta-rafta na fisal jaayen.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Zindagi Mein Mohabbat Ka Fasana</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Zindagi mein mohabbat ka fasana nahi raha,
+Ye hum nahi rahe ya ye zamana nahi raha.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kisi Rooh Ki Zindagi Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kisi rooh ki zindagi mein faqat aarzoo hi hai,
+Yun to na kahen ke woh poori na ho sake.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Shakhs Ke Andar</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har shakhs ke andar dhoondha hai us shakhs ko,
+Jise main jaanti bhi nahi.
+Par kisi shakhs ke andar,
+Woh shakhs mujhe kabhi na mil saka.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kya Kahen, Kaise Kahen</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kya kahen, kaise kahen...
+Zindagani mein ye justuju hi reh jaati hai.
+Waise to marne se pehle,
+Maut kai baar dastak de jaati hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Aashiqon Ki Chahat Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Aashiqon ki chahat mein khud ko barbaad na kar,
+Veerani, ulfat mein yun khud ko aabaad na kar.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Yeh Khwahishon Ki Aarzooon Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Yeh khwahishon ki aarzooon mein kahin kuch ghalat na maang loon main.
+Yeh khwahishon ki aarzooon mein kahin kuch ghalat na maang loon main.
+Isi liye kehta hoon, Ya Rabb, Tu apni marzi se mujhe de.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Yun To Reh Loongi Main</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Yun to reh loongi main faqat tere baghair bhi,
+Yun to reh loongi main faqat tere baghair bhi,
+Par yeh na kahungi ke intezaar nahin hai tera.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Wasal-e-Khwaab</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Wasal-e-khwaab jabse hua hai tujhse,
+Humko to neend se mohabbat hi ho gayi.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Faqat Alfaazon Ko Chunne Mein</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Faqat alfaazon ko chunne mein kitne bhi maahir hon,
+Lafzon mein sadaqat na ho to achha nahi lagta.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Posheeda Gehraaiyon</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Posheeda gehraaiyon ko jaanne wale sukoon mein nahi rehte.
+Agar shak hai koi, to mil len humse.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kisi Shakhs Ke Posheeda-Pan</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kisi shakhs ke posheeda-pan ko dekh kar,
+Har shakhs ke posheeda-pan ko dekh kar humne jaana hai ye,
+Ke sab se na milna hi achha hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Lekin Agar Hum Na Milen</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Lekin agar hum na milen kisi se bhi,
+To khud ke posheeda-pan ko kaise chhupa paayenge?</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ek Aarzu Hai Faqat Jeene Ki</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ek aarzu hai faqat jeene ki,
+Ek chahat hai kisi ke saath marne ki.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Ek Chahat Hai Khud Tak</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ek chahat hai khud tak baatein rakhne ki,
+Ek khwahish hai sab ko dard batane ki.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kuch Zakhm Duaon Se Bhi Bharte Hain</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kuch zakhm duaon se bhi bharte hain,
+Yun to na, kai log sajdon pe marte hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Sach Ko Gawah Ki Zarurat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har sach ko gawah ki zarurat nahin hoti,
+Har jhooth ko saza ki zarurat nahin hoti.
+Kuch log bikhar jaate hain gawahi ke baad bhi,
+Kuch log mar jaate hain gunahon ke saath hi.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Kuch Raaste Hain Manzil Se Zyada Azeez</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Kuch raaste hain manzil se zyada azeez,
+Kuch duayein hain jo safar mein qubool ho jaati hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Dua Qubool Ho</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har dua qubool ho, yeh bhi rehmat nahin hoti,
+Har galti ke baad maafi zarurat nahin hoti.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Insaan Kho Jaata Hai</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Insaan kho jaata hai,
+Par uski awaazein gum nahin hoti.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Jo Khoya Tha</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Jo khoya tha woh paas tha hi nahin mere,
+Jo paaya tha woh maine khud hi chhod diya.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khwaabon Ki Ziyaarat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Aaj aaye hain dafnane qabristan khwaab mein,
+Keh ke gaye hain, aayenge phir ziyaarat karne.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Nazar Milin</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Nazar milin, yun nazar jhuki,
+Nazar nazar mein baat chali,
+Kehna na tum mujh ko kali,
+Ek baat pe main to phisal chali,
+Na nazrein milin, na nazar jhuki,
+Maine to bas khwaab ki baat buni.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khwaabon Ko Dekhte Rehna</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Khawabon ko dekhte rehna bhi accha nahi hota noor,
+Zindagi main waqt milne par so bhi jaana chahiye</div>
+    </article>
+
+    <article class="poem">
+      <h2>Us Masoom Ka Bachpan</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Us masoom ka bachpan dushwar ho gaya,
+Kam-umri hi mein usne makhlooq ke rukhsaaron par naqaab dekh liye.
+Woh us tah mein utar gaya,
+Jahaan se koi laut kar nahin aata.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Be-Hamraah Safar</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Hujoom ke saath nikle the, koson door aa gaye,
+Mud kar dekha, to safar mein koi hamraah na tha.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Tark-e-Ta'alluq</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Tark-e-ta'alluq ki ada ka kya sochein,
+Hum to woh hain ke aap ko dekhein, to khamosh ho baithte hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Baqaa Aur Fanaa</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Maine apni baqaa ko fanaa kar diya,
+Par tune ek nigah-e-didaar bhi na bakhshi mujhe.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Sham'a Ki Khaak</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Sham'a ki khaak hoon main,
+Zaahir na ho sakungi is zamaana-e-bad-dil mein.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Hijr Ki Baat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Tu kehta to main tere ishq mein fanaa ho jaati,
+Magar tum to hamare hijr ki baat par hi ad gaye.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khizaan Ki Tanhaai</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Khizaan ki tanhaai mein udaasi utar aayi,
+Zakhmon ne bhi khamoshi ka naqaab odh liya.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Wahm Ki Kaifiyat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Wahm ki kaifiyat mein fikr bhi shaamil thi zara,
+Us takhayyul ne mera raaz be-naqaab kar diya.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khud-Kalaami</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Is hijrat ke mausam mein khaali-pan to aam hai,
+Is bezaari ka kya karein, chalo khud-kalaami karte hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Aitbaar-e-Insaan</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Aitbaar-e-insaan karte na to kya karte,
+Hum unpe marte na to kya karte,
+Nida ko Feshardan na karte to kya karte,
+Khamoshi se na marte to kya karte.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khayalon Ki Riwayat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Ye khayalon ki riwayat bhi ajab hai jaana,
+Kahin bhi mil jaate hain Mahal-e Talâghi par.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Baatein Yaad Aati Hain</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Is hayat-e-safar mein kuch ghamgeen si raatein yaad aati hain,
+Kuch na kaho to rakhi-chhupi baatein yaad aati hain,
+Aur tum kya hi kar loge izhaar-e-mohabbat karke,
+Jab saamne wale ko uske chaand ki baatein yaad aati hain.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Chaand Aur Zameen</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">izhaar-e-mohabbat kar ke faqat tumhe milna kya hai,
+Woh chaand hai aasmaan ka, aur tum ho zameen ke phool.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Daaghon Se Mohabbat</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Yun daaghon se mohabbat kar ke dekho to sahi,
+Kitna tadapta hai faqat insaan doosre ke liye.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Hasr Ki Talaash</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">na safr e hayat hai,
+na mout mere paas hai,
+Mera hashr mujhse naraz hai,
+Us ghar ki mujhko talash hai,
+Na Hamsafar mera bana hamnawa,
+Iss dard main hu ab main jee raha,</div>
+    </article>
+
+    <article class="poem">
+      <h2>Khud-Kalami Karte Karte Khud Ko Padhna Seekh Liya</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Khud-kalami karte karte khud ko padhna seekh liya,
+Chahat ko peeche rakhke aage badhna seekh liya,
+Fitrat ko uski hamne samajhna seekh liya,
+Katron ko peche chode samandar tak badhna seekh liya,
+Pehni nahi khaal bhediye ki na bane ham bhed iske beech me jo hota hai wo hi banna seekh liya,
+Yum sheshe main bhi kya dekhen dikhta hai bss chera hi qubool karna seekh liya,
+Jo kaante lagte jaate kya darna hamko unse bhi jab jaani hain itni baate to inse bhi ladhna seekh liyaa,
+Unki na mafi par bhi maaf karna seekh liya,
+Safr e hayat main aage chalna seekh liya,
+Yadon ko manzil tak rakhna seekh liya,
+Sukoon ki talash main haqeqat se faasla karna seekh liya,
+Lagta to aisa hi hai shayad ye sab seekh liya?</div>
+    </article>
+
+    <article class="poem">
+      <h2>Badal Gayi Hu</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Badal gayi hu,
+Badal rahi hu,
+Badaln hi achha hai,
+Iss hayat-e-safr main na bikharna hi accha hai,
+Uthke phir se chalna hi accha hai,
+Khamoshi se milna hi accha hai,
+Dusron ko khne dena hi accha hai,
+Khud chup rehna hi accha hai,
+Khud sambhal kar aage badhna hi accha hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Rooh Ka Mausam</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har rooh ka mausam gumshuda hai kahin,
+Har rooh ki veerani mein awaaz nikalti hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Rooh Ka Mausam</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har rooh ka mausam gumshuda hai kahin,
+Har rooh ki veerani mein awaaz nikalti hai.
+
+Yun cheekhti hai faqat sunne ke khaatir woh,
+Ke sun le koi, mere dil se aah nikalti hai.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Faqat Chand</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Faqt chand iss zamen par hota hai nahi,
+Ik chand hota jo kisi ka nahi hota....</div>
+    </article>
+
+    <article class="poem">
+      <h2>Har Muskurahat Ke Peeche</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Har muskurahat ke peeche sukoon nahin hota,
+Har aarzoo ke peeche justuju nahin hoti.
+
+Yun to mil jaate hain kai log zamaane mein,
+Par har shakhs ki hame zarurat nahin hoti.
+
+Yun aankhon ke ashk bhi puraane hi sahi,
+Har ashk ke peeche kahaani puraani nahin hoti.
+
+Yun dil mein behte hain dariya kai waise,
+Par har dariya ke bahaav mein rawani nahin hoti.</div>
+    </article>
+
+    <article class="poem">
+      <h2>Dekhenge Khwaab Phir Se</h2>
+      <button type="button" aria-expanded="false" onclick="togglePoem(this)">Read poem</button>
+      <div class="verses hidden">Dekhenge khwaab phir se abhi waqt lagega.
+
+Dil ko sanwarne mein abhi waqt lagega,
+Ashkon ko girne mein abhi waqt lagega,
+Dehleez ko paar karne mein abhi waqt lagega,
+Doob jaane mein abhi waqt lagega,
+Bikhar jaane mein abhi waqt lagega,
+Khataayein bhulane mein abhi waqt lagega.
+
+Waqt lagega...
+
+Muddaton baad hui hai mulaqat khud se,
+To tujh ko bhulane mein abhi waqt lagega.</div>
+    </article>
+
+  </section>
+
+  <p id="empty" class="hidden">No matching poems found.</p>
+</main>
+
+<footer>© Noor-ul-Alif · The Written Silence</footer>
+
+<script>
+function togglePoem(button) {
+  const verses = button.nextElementSibling;
+  const opening = verses.classList.toggle("hidden");
+  button.textContent = opening ? "Read poem" : "Close poem";
+  button.setAttribute("aria-expanded", String(!opening));
+}
+
+const search = document.getElementById("search");
+const poems = [...document.querySelectorAll(".poem")];
+const empty = document.getElementById("empty");
+
+search.addEventListener("input", () => {
+  const term = search.value.toLowerCase().trim();
+  let matches = 0;
+
+  poems.forEach(poem => {
+    const found = poem.textContent.toLowerCase().includes(term);
+    poem.classList.toggle("hidden", !found);
+    if (found) matches++;
+  });
+
+  empty.classList.toggle("hidden", matches > 0);
+});
+</script>
+</body>
+</html>
